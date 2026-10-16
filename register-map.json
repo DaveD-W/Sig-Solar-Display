@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": 1,
+  "version": 2,
   "protocol": "Sigenergy Modbus V2.9 (2026-05-13)",
   "tcpPort": 502,
   "plantUnit": 247,
@@ -93,6 +93,12 @@
       "address": 32003,
       "type": "s32",
       "gain": 1,
+      "sign": 1
+    },
+    "batteryAvailableEnergy": {
+      "address": 30066,
+      "type": "u32",
+      "gain": 100,
       "sign": 1
     }
   }
