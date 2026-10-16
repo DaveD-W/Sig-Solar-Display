@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "version": 1,
+  "protocol": "Sigenergy Modbus V2.9 (2026-05-13)",
+  "tcpPort": 502,
+  "plantUnit": 247,
+  "function": 4,
+  "coreAddress": 30000,
+  "coreWords": 39,
+  "connectedValue": 1,
+  "smartChannels": 24,
+  "smartStride": 2,
+  "fields": {
+    "utc": {
+      "address": 30000,
+      "type": "u32",
+      "gain": 1,
+      "sign": 1
+    },
+    "gridConnected": {
+      "address": 30004,
+      "type": "u16",
+      "gain": 1,
+      "sign": 1
+    },
+    "grid": {
+      "address": 30005,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "soc": {
+      "address": 30014,
+      "type": "u16",
+      "gain": 10,
+      "sign": 1
+    },
+    "plant": {
+      "address": 30031,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "solar": {
+      "address": 30035,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "battery": {
+      "address": 30037,
+      "type": "s32",
+      "gain": 1,
+      "sign": -1
+    },
+    "home": {
+      "address": 30284,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "generatedToday": {
+      "address": 30272,
+      "type": "u32",
+      "gain": 100,
+      "sign": 1
+    },
+    "thirdSolar": {
+      "address": 30194,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "exportTotal": {
+      "address": 30220,
+      "type": "u64",
+      "gain": 100,
+      "sign": 1
+    },
+    "smartPower": {
+      "address": 30146,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "dcPower": {
+      "address": 31502,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    },
+    "acPower": {
+      "address": 32003,
+      "type": "s32",
+      "gain": 1,
+      "sign": 1
+    }
+  }
+}
